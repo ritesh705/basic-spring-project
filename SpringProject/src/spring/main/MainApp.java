@@ -7,10 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author Ritesh
  *
  */
-public class MainApp {
-
-	public static void main(String args[]){
-		
+public class MainApp
+{
+	public static void main(String args[])
+	{	
 		AbstractApplicationContext applicationContext = 
 				new ClassPathXmlApplicationContext("Beans.xml");
 		Employee employee = (Employee)applicationContext.getBean("employee");
@@ -20,5 +20,5 @@ public class MainApp {
 		System.out.println("Employee Details: "+employee.getEmployeeId()+" | "+employee.getEmailId());
 		System.out.println(jc.getList()+"\n"+jc.getSet()+"\n"+jc.getMap()+"\n"+jc.getProps());
 		applicationContext.registerShutdownHook();
-		}
 	}
+}

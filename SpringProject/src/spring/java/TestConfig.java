@@ -1,5 +1,6 @@
 package spring.java;
 
-public class TestConfig {
+public class TestConfig
+{
 
 }
