@@ -6,12 +6,12 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="person" class="spring.main.Person">
+	<bean id="person" class="com.ritesh.xmlbased.Person">
 		<property name="name" value="Jaicky"/>
 	</bean>
 		  
 	<bean id ="employee" 
-		  class="spring.main.Employee" 
+		  class="com.ritesh.xmlbased.Employee"
 		  lazy-init="true" 
 		  scope="singleton" 
 		  init-method="init" 
@@ -24,13 +24,13 @@
 	     <constructor-arg index="2" value="ritesh.p.kumar@accenture.com"/>
 	</bean>
 	
-	<bean id="address" class="spring.main.Address">
+	<bean id="address" class="com.ritesh.xmlbased.Address">
 		<property name="city" value="Hyderabad"/>
 		<property name="state" value="TS"/>
 		<property name="country" value="India"/>
 	</bean>
 	
-	<bean id="javaCollection" class="spring.main.JavaCollection">
+	<bean id="javaCollection" class="com.ritesh.xmlbased.JavaCollection">
 	<property name="list">
 		<list>
 			<value>ListObject01</value>
@@ -59,6 +59,6 @@
 	</property>
 	</bean>
 	
-	<bean class="spring.main.InitBean"></bean>
+	<bean class="com.ritesh.xmlbased.InitBean"></bean>
 	
 </beans>

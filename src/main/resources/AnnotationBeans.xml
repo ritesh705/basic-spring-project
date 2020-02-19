@@ -11,21 +11,21 @@
 		  
 	<context:annotation-config/>
 	
-	<bean id ="employee" class="spring.annotation.main.Employee" p:name="Employee01" p:employeeId="12345678">
+	<bean id ="employee" class="com.ritesh.annotation.Employee" p:name="Employee01" p:employeeId="12345678">
 	</bean>
 	
-	<bean id="address01" class="spring.annotation.main.Address">
+	<bean id="address01" class="com.ritesh.annotation.Address">
 		<property name="city" value="Hyderabad"/>
 		<property name="state" value="TS"/>
 		<property name="country" value="India"/>
 	</bean>
 	
-	<bean id="address02" class="spring.annotation.main.Address">
+	<bean id="address02" class="com.ritesh.annotation.Address">
 		<property name="city" value="testCity"/>
 		<property name="state" value="testState"/>
 		<property name="country" value="testCountry"/>
 	</bean>
 	
-	<bean class="spring.annotation.main.InitBean"></bean>
+	<bean class="com.ritesh.annotation.InitBean"></bean>
 	
 </beans>
