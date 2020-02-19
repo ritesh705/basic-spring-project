@@ -1,4 +1,4 @@
-package spring.main;
+package com.ritesh.xmlbased;
 
 import java.util.List;
 import java.util.Map;

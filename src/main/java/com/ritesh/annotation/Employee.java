@@ -1,4 +1,4 @@
-package spring.annotation.main;
+package com.ritesh.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,4 +1,4 @@
-package spring.main;
+package com.ritesh.annotation;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -12,13 +12,11 @@ public class MainApp
 	public static void main(String args[])
 	{	
 		AbstractApplicationContext applicationContext = 
-				new ClassPathXmlApplicationContext("Beans.xml");
+				new ClassPathXmlApplicationContext("AnnotationBeans.xml");
 		Employee employee = (Employee)applicationContext.getBean("employee");
-		JavaCollection jc = (JavaCollection)applicationContext.getBean("javaCollection");
 		System.out.println("Employee Name: "+employee.getName());
+		System.out.println("Employee Details: "+employee.getEmployeeId());
 		System.out.println("Address: "+employee.getAddress().getCity()+" | "+employee.getAddress().getCountry());
-		System.out.println("Employee Details: "+employee.getEmployeeId()+" | "+employee.getEmailId());
-		System.out.println(jc.getList()+"\n"+jc.getSet()+"\n"+jc.getMap()+"\n"+jc.getProps());
 		applicationContext.registerShutdownHook();
 	}
 }

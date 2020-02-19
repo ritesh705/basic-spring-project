@@ -1,4 +1,4 @@
-package spring.main;
+package com.ritesh.xmlbased;
 
 public class Person
 {

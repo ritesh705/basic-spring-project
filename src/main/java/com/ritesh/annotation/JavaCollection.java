@@ -1,4 +1,4 @@
-package spring.annotation.main;
+package com.ritesh.annotation;
 
 import java.util.List;
 import java.util.Map;

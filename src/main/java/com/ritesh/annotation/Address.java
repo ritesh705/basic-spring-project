@@ -1,4 +1,4 @@
-package spring.annotation.main;
+package com.ritesh.annotation;
 
 public class Address
 {
